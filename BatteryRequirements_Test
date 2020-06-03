@@ -1,0 +1,22 @@
+import java.util.*;
+import java.io.*;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class Main1 {
+	public static void main(String[] args) throws IOException {
+		JSONObject json = new JSONObject();
+		double[] arr = new double[10000];
+		File file = new File("F:\\Battery.txt");
+		try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+			String readLine,str;
+			while ((readLine = br.readLine()) != null) {
+				StringTokenizer st = new StringTokenizer(readLine);
+				while (st.hasMoreTokens()) {
+					str = st.nextToken();
+					
+					}
+			}
+		}
+	}
+}
